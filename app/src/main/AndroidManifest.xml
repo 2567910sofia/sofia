@@ -12,7 +12,10 @@
         android:theme="@style/Theme.Dasix_Proyecto"
         tools:targetApi="31">
         <activity
-            android:name=".Activityingresar"
+            android:name=".Activityregistrar"
+            android:exported="false" />
+        <activity
+            android:name=".categorias_producto"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
