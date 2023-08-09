@@ -6,35 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".categorias_producto">
 
-    <LinearLayout
-        android:layout_width="421dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="187dp">
+    <Spinner
+        android:id="@+id/productos"
+        android:layout_width="408dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.355" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:text="BUSCAR CATEGORIAS "
-            android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/categorias"
+        android:layout_width="407dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="@+id/productos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <Spinner
-            android:id="@+id/productos"
-            android:layout_width="409dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="416dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="BUSCAR CATEGORIAS "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/categorias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
 
-        <Spinner
-            android:id="@+id/categorias"
-            android:layout_width="407dp"
-            android:layout_height="66dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="1dp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
+        android:text="PRODUCTO "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

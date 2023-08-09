@@ -8,7 +8,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class categorias_producto extends AppCompatActivity {
@@ -23,44 +26,19 @@ public class categorias_producto extends AppCompatActivity {
         categorias=findViewById(R.id.categorias);
         productos=findViewById(R.id.productos);
 
+        String[]categoriasList={"cereales","carnes","bebidas","enlatados","aseo"};
+        ArrayAdapter<String>categoria=new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,categoriasList);
+        categorias.setAdapter(categoria);
 
-        String[]categorias={"cereales","carnes","bebidas","enlatados"};
+
+        String[] productoslist={"arroz","pesacado","agua en botella","sardina","jabon de baño"};
+        ArrayAdapter<String>producto=new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, productoslist);
+        productos.setAdapter(producto);
 
 
-        /*
-        listacategoria=new ArrayList<>();
-        listacategoria=(new categoria("cereales"));
-        listacategoria=(new categoria("carnes"));
-        listacategoria=(new categoria("productos de aseo"));
         
-        listaproducto=(new productos("arroz,5000"));
-        listaproducto=(new productos("pollo,4500"));
-        listaproducto=(new productos("crema dental"));
-
-
-         */
-
-/*
-        ArrayAdapter<categoria>categoriasArrayAdapter=new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,);
-        categoriasArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        categorias.setAdapter(categoriasArrayAdapter);
-
-
-
-
-
-        categorias.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
- */
-            }
-
-
-
-
-
-
-
+        
+       
     }
+
+}
